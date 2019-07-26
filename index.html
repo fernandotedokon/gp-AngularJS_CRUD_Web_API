@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <title>CRUD com AngularJS</title>
+        
+        <link href="css/stylesheet.css" rel="stylesheet">
+
+        <script src="js/vendor/angular.min.js"></script>
+        <script src="js/vendor/angular-route.min.js"></script>
+
+        <script src="js/app/app.js"></script>
+        
+        <script src="js/app/lembrete/LembreteListarCtrl.js"></script>
+        <script src="js/app/lembrete/LembreteCriarCtrl.js"></script>
+        <script src="js/app/lembrete/LembreteDetalheCtrl.js"></script>
+        <script src="js/app/lembrete/LembreteEditarCtrl.js"></script>
+        <script src="js/app/lembrete/LembreteRemoverCtrl.js"></script>
+    </head>
+    <body ng-app="lembrete">
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/#/criar">Novo</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <h3><a href="/#/">Sistema de Lembretes</a></h3>
+        </header>
+           
+        <article>
+            <div class="principal" ng-view></div>
+        </article> 
+    </body>
+</html>

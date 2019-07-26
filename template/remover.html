@@ -1,0 +1,15 @@
+<p class="message" ng-show="mensagem">{{mensagem}}</p>
+
+<div ng-show="lembrete.Id">
+    <h3>Voc&ecirc; tem certeza que deseja remover essa nota?</h3>
+
+    <div class="noteArea">
+        <h3>{{lembrete.Title}}</h3>
+
+        <hr>
+
+        <p>{{lembrete.Body}}</p>
+    </div>
+
+	<button ng-click="remover()" ng-disabled="mensagem">Remover</button>
+</div>

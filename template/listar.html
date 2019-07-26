@@ -1,0 +1,26 @@
+<p class="message" ng-show="mensagem">{{mensagem}}</p>
+
+<div ng-show="lembretes.length">
+    <table>
+        <caption>Lista de lembretes</caption>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>T&iacute;tulo</th>
+                <th>A&ccedil;&otilde;es</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="lembrete in lembretes">
+                <td>{{lembrete.Id}}</td>
+                <td>
+                    <a href="/#/detalhes/{{lembrete.Id}}">{{lembrete.Title}}</a>
+                </td>
+                <td>
+                    <a href="/#/editar/{{lembrete.Id}}">Editar</a>
+                    <a href="/#/remover/{{lembrete.Id}}">Apagar</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
